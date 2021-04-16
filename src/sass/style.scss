@@ -1,0 +1,29 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+
+@import 'base/variables';
+@import 'base/mixins';
+* {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: $second-color;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.hamburger {
+    display: none;
+    z-index: 15;
+}
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/buttons';
+
+@import 'blocks/media';

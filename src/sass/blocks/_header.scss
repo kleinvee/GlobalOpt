@@ -1,0 +1,54 @@
+.header {
+    height: 123px;
+    padding-top: 23px;
+    display: flex;
+    align-items: center;
+    &__list {
+        margin: 0 52px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        li {
+            padding: 0 13px;
+            border-right: 1px dotted rgba($color: #ffffff, $alpha: 0.4);
+            &:last-child {
+                border-right: none;
+            }
+            a {
+                padding: 5px 0;
+                font-size: 15px;
+                line-height: 16px;
+                font-weight: 400;
+                color: $second-color;
+                &:hover {
+                    text-decoration: none;
+                    color: $main-color;
+                    border-bottom: 1px $main-color solid;
+                }
+            }
+        }
+        
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__contacts {
+        margin-right: 18px;
+        text-align: right;
+        &__text {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+        a {
+            font-size: 19px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    
+}
