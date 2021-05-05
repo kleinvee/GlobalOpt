@@ -20,7 +20,7 @@
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     }
     &__calculation {
-        margin: 39px auto 39px auto;
+        margin: 39px auto;
         font-size: 15px;
         line-height: 17px;
         font-weight: 700;
@@ -28,7 +28,17 @@
         height: 57px;
         padding-top: 21px;
     }
-    
+    &__prices {
+        margin: auto;
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        a {
+            text-decoration: none;
+            color: $second-color
+        }
+    }
 }
 
 

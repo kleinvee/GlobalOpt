@@ -22,8 +22,26 @@
     z-index: 15;
 }
 
+.divider {
+    width: 148px;
+    height: 1px;
+    background-color: $main-color;
+    margin: 20px auto 17px auto;
+}
+
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/buttons';
-
+@import 'blocks/benefits';
+@import 'blocks/titles';
+@import 'blocks/ourWork';
+@import 'blocks/insert';
+@import 'blocks/prices';
+@import 'blocks/scheme';
+@import 'blocks/reviews';
+@import 'blocks/slick';
+@import 'blocks/questions';
+@import 'blocks/map';
+@import 'blocks/footer';
+@import 'blocks/overlay';
 @import 'blocks/media';

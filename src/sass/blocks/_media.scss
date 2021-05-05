@@ -13,13 +13,34 @@
             }
         }
     }
+    .ourWork {
+        .title {
+            &__descr {
+                padding: 0 120px;
+            }
+        }
+    }
+    .insert {
+        &__subtitle {
+            padding: 22px 140px 0 140px;
+        }
+    }
+    .prices {
+        &__block {
+            width: 228px;
+        }
+    }
 }
+
+
+
 
 @media (max-width: 991px){
     .promo {
         .header {
             &__list {
                 flex-wrap: wrap;
+                max-width: 375px;
                 li {
                     border-right: none;
                     padding: 0 21px;
@@ -46,6 +67,81 @@
             &-text {
                 font-size: 13px;
             }
+        }
+    }
+    .benefits {
+        &__inform {
+            padding-left: 15px;
+        }
+    }
+    .ourWork {
+        .title {
+            &__descr {
+                padding: 0 80px;
+                font-size: 16px;
+            }
+        }
+        &__subtitle {
+            padding-top: 14px;
+        }
+        &__text {
+            padding-top: 8px;
+        }
+    }
+    .insert {
+        &__subtitle {
+            padding: 22px 100px 0 100px;
+        }
+    }
+    .prices {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__block {
+            width: 292px;
+        }
+        .title {
+            &__descr {
+                padding: 0 64px;
+            }
+        }
+        &__consultation {
+            input {
+                width: 220px;
+            }
+        }
+    }
+    .questions {
+        &__wrapper {
+            width: 696px;
+        }
+        &__inputs {
+            input {
+                width: 222px;
+            }
+        }
+        &__textarea {
+            textarea {
+                width: 674px;
+            }
+        }
+    }
+    .footer {
+        &__up {
+            &-motto {
+                font-size: 12px;
+            }
+            &-wrapper {
+                flex-direction: column;
+            }
+            &-contacts {
+                padding-bottom: 4px;
+            }
+        }
+    }
+    .modal {
+        .prices__consultation-inputs input {
+            width: 270px!important;
         }
     }
 }
@@ -97,13 +193,13 @@
             &__list {
                 position: fixed;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 top: 0;
                 left: -100%;
                 width: 50%;
-                height: 100vh;
-                padding: 20px 15px;
+                height: 100%;
+                padding: 101px 15px;
                 background-color: rgba(0,0,0, .9);
                 transition: 0.6s all;
                 li {
@@ -115,7 +211,7 @@
                     line-height: 46px;
                 }
                 &_active {
-                    left: -52px;
+                    left: 0;
                     z-index: 10;
                 } 
                 &_item {
@@ -163,8 +259,106 @@
             padding-top: 20px;
         }
     }
-
+    .benefits {
+        &__inform {
+            padding-left: 30px;
+        }
+    }
+    .subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .text {
+        font-size: 12px;
+    }
+    .insert {
+        &__icon {
+            top: 40px;
+        }
+        &__title {
+            padding-top: 60px;
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+    }
+    .insert {
+        &__subtitle {
+            padding: 22px 50px 0 50px;
+        }
+    }
+    .prices {
+        &__block {
+            width: 248px;
+        }
+        .title {
+            &__descr {
+                padding: 0 15px;
+                font-size: 18px;
+            }
+        }
+        &__consultation {
+            &-inputs {
+                flex-direction: column;
+                input {
+                    width: 300px;
+                    margin: 5px 0;
+                }
+            }
+            &-btn {
+                bottom:-245px
+            }
+        }
+    }
+    .reviews {
+        .title__descr {
+            padding: 0 32px;
+        }
+        &__carousel {
+            width: 576px;
+            &-inner {
+            width: 338px;
+            }
+        }
+    }
+    .questions {
+        height: 525px;
+        &__wrapper {
+            width: 522px;
+        }
+        &__inputs {
+            flex-direction: column;
+            input {
+                width: 388px;
+                margin-top: 6px;
+            }
+        }
+        &__textarea {
+            textarea {
+                width: 388px;
+            }
+        }
+        &__application {
+            min-height: 336px;
+        }
+    }
+    .footer {
+        &__up {
+            flex-direction: column;
+            &-wrapper {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+    .modal {
+        .prices__consultation-btn {
+            bottom: -168px;
+        }
+    }
 }
+
+
 @media (max-width:575px ) {
     .promo {
         .header {
@@ -180,12 +374,12 @@
             }
             &__list {
                 width: 100%;
-                left: -117%;
+                max-width: 100%;
                 a {
                     line-height: 54px;
                 }
                 &_active {
-                    left: -52px;
+                    left: 0px;
                 }
             }
         }
@@ -208,6 +402,112 @@
             &-circle {
                 margin: 32px 10px;
             }
+        }
+    }
+    .title {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .ourWork {
+        .title {
+            &__descr {
+                font-size: 14px;
+                padding: 0 10px;
+            }
+        }
+    }
+    .insert {
+        &__subtitle {
+            padding: 22px 10px 0 10px;
+        }
+    }
+    .prices {
+        &__block {
+            width: 292px;
+        }
+        .title {
+            &__descr {
+                padding: 0;
+                font-size: 17px;
+            }
+        }
+        &__consultation {
+            input {
+                width: 260px;
+            }
+        }
+    }
+    .reviews {
+        .title__descr {
+            padding: 0 12px;
+            font-size: 18px;
+        }
+        .reviews__carousel {
+            width: 320px;
+            &-inner {
+                width: 200px;
+                margin: 10px 0;
+            }
+        }
+        .slick-prev {
+            left: 20%;
+        }
+        .slick-next {
+            right: 20%;
+        }
+        .slick-list {
+            padding: 60px 0!important;
+        }
+    }
+    .questions {
+        &__wrapper {
+            width: 296px;
+        }
+        &__inputs {
+            input {
+                width: 276px;
+            }
+        }
+        &__textarea {
+            textarea {
+                width: 276px;
+            }
+        }
+        &__application {
+            min-height: 336px;
+        }
+    }
+    .footer {
+        &__up {
+            &-logo {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                img {
+                    margin: 0 auto;
+                }
+            }
+            &-motto {
+                font-size: 10px;
+                padding: 5px 0;
+            }
+            &-wrapper {
+                flex-direction: column;
+            }
+            &-contacts {
+                padding-bottom: 4px;
+                text-align: center;
+                margin: 0;
+            }
+        }
+        &__down {
+            flex-direction: column;
+        }
+    }
+    #modal, #thanks {
+        .modal__close, .thanks__close {
+            top: -31px;
+            right: 2px;
         }
     }
 }

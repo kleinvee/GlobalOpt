@@ -1,0 +1,25 @@
+.ourWork {
+    min-height: 620px;
+    &__wrapper {
+        padding-top: 37px;
+    }
+    &__subtitle {
+        font-family: Roboto;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 700;
+        color: $main-color;
+        text-align: center;
+        padding-top: 28px;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        color: #3a3a3a;
+        text-align: center;
+        padding: 12px 0 57px 0;
+    }
+    &__img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,77 @@
+.reviews {
+    &__carousel {
+        position: relative;
+        margin: 0 auto;
+        width: 600px;
+        &-inner {
+            width: 360px;
+            margin:  10px;
+        }
+        &-img {
+            margin: 48px auto 0 auto;
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+        }
+        &-comment {
+            font-weight: 300;
+            color: #3a3a3a;
+            text-align: center;
+            padding: 0 22px;
+        }
+        &-name {
+            font-family: Roboto;
+            line-height: 22px;
+            font-weight: 700;
+            color: #3a3a3a;
+            text-align: center;
+        }
+    }
+}
+.slick-arrow {
+    z-index: 10;
+    border: none;
+    background-color: #fff;
+}
+.slick-prev {
+    position: absolute;
+    top: 50px;
+    left: 32%;
+}
+.slick-next {
+    position: absolute;
+    top: 50px;
+    right: 32%;
+}
+.slick-slide {
+    margin: 0 60px;
+    .reviews__carousel-img {
+        margin-top: 48px;
+        width: 70px;
+        height: 70px;
+    }
+    .reviews__carousel-name {
+        font-size: 12px;
+    }
+    .reviews__carousel-comment {
+        font-size: 8px;
+    }
+}
+.slick-center {
+    .reviews__carousel-img {
+        margin-top: 0;
+    }
+    .reviews__carousel-inner {
+        transform: scale(1.66667); 
+    }
+}
+.slick-slide {
+    opacity: 0;
+}
+.slick-center {
+    display: block;
+    opacity: 1;
+}
+.slick-list { 
+    padding :60px 50px!important;
+  }

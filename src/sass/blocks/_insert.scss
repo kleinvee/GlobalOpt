@@ -1,0 +1,30 @@
+.insert {
+    &__agent {
+        background: url(../img/bg/agent_bg.jpg) center (center/cover) no-repeat;
+    }
+    &__menegers {
+        background: url(../img/bg/menegers_bg.jpg) center (center/cover) no-repeat;
+    }
+    height: 342px;
+    &__icon {
+        @include icon-circle;
+    }
+    &__title {
+        font-family: Roboto;
+        font-size: 26px;
+        line-height: 23px;
+        font-weight: 700;
+        color: $second-color;
+        padding-top: 78px;
+        text-align: center;
+    }
+    &__subtitle {
+        font-family: Roboto;
+        font-size: 19px;
+        line-height: 27px;
+        font-weight: 300;
+        color: $second-color;
+        text-align: center;
+        padding: 22px 165px 0 165px;
+    }
+}

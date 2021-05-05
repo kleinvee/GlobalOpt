@@ -1,0 +1,58 @@
+@mixin icon-circle {
+    position: relative;
+    width: 102px;
+    height: 102px;
+    border: 1px solid $second-color;
+    border-radius: 100%;
+    margin: 0 auto;
+    top: 58px;
+    img {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        top: 21px;
+        bottom: 30px;
+        right: 0;
+    }
+}
+
+@mixin inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    input {
+        color: #000;
+        padding-left: 27px;
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        width: 270px;
+        height: 47px;
+        background-color: #ffffff;
+        border: 1px solid rgba(0,0,0,0.2);
+        border-radius: 30px;
+        &:nth-child(-n+2) {
+            margin-right: 4px;
+        }  
+    }
+}
+
+@mixin contacts {
+    margin-right: 18px;
+    text-align: right;
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+    a {
+        font-size: 19px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

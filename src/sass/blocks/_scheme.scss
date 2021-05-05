@@ -1,0 +1,41 @@
+.scheme {
+    background-color: #f3f3f3;
+    &__wrapper {
+        padding-bottom: 46px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__box {
+        margin: 30px 14px 0 14px;
+        max-width: 231px;
+    }
+    &__icon {
+        position: relative;
+        height: 57px;
+        img {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    &__title {
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        color: $main-color;
+        text-align: center;
+        padding-top: 7px;
+    }
+    &__descr {
+        font-size: 14px;
+        font-weight: 300;
+        color: #3a3a3a;
+        text-align: center;
+        padding-top: 5px;
+    }
+}

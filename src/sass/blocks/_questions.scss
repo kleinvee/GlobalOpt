@@ -1,0 +1,69 @@
+.questions {
+    height: 438px;
+    background: url(../img/bg/questions_bg.jpg) center (center/cover) no-repeat;
+    padding: 62px 0 79px 0;
+    &__wrapper {
+        height: 297px;
+        width: 896px;
+        margin: 0 auto;
+    }
+    &__rectangle {
+        width: 100%;
+        height: 68px;
+        background-color: #25333c;
+        &-title {
+            font-family: Roboto;
+            font-size: 19px;
+            line-height: 19px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-top: 20px;
+            text-align: center;
+        }
+        &-sub {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 400;
+            padding-top: 5px;
+        }
+    }
+    &__application {
+        min-height: 229px;
+        width: 100%;
+        background-color: rgba(#ffffff, .7);
+    }
+    &__inputs {
+        padding-top: 17px;
+        @include inputs;
+    }
+    &__textarea {
+        padding-top: 6px;
+        display: flex;
+        justify-content: center;
+        textarea {
+            resize: none;
+            width: 817px;
+            height: 73px;
+            color: #000!important;
+            padding-left: 27px;
+            padding-top: 13px;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+            background-color: #ffffff;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 12px;
+        }
+    }
+    &__btn {
+        width: 100%;
+        button {
+            display: block;
+            margin: 16px auto 0 auto;
+            border: none;
+            padding-top: 1px;
+            width: 180px;
+        }
+    }
+}

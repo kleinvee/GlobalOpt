@@ -1,0 +1,52 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    .prices {
+        &__consultation {
+            &-inputs {
+                flex-direction: column;
+                input {
+                    margin-bottom: 5px;
+                }
+            }
+            &-btn {
+                top: 82px;
+            }
+        }
+    }
+}
+
+#modal, #thanks {
+    position: fixed;
+    width: 300px;
+    background-color: $second-color;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    padding: 0 3px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+    .modal__close, .thanks__close {
+        position: absolute;
+        top: 0;
+        right: -40px;
+        font-size: 68px;
+        line-height: 19px;
+        color: $main-color;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+#thanks {
+    .thanks__text {
+        text-align: center;
+        color: $main-color;
+    }
+}
+    
